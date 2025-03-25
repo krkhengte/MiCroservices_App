@@ -20,7 +20,7 @@ public class PaymentController {
     @Autowired
     private RestTemplate restTemplate;
 
-    @PostMapping
+    @PostMapping("/createPayment")
     public Payment createPayment(@RequestBody Payment payment) {
         // Process payment
         payment.setStatus("PAID");

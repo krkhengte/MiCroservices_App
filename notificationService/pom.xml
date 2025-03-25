@@ -13,8 +13,9 @@
 
 	<groupId>com.notificationService</groupId>
 	<artifactId>notificationService</artifactId>
-	<version>0.0.1-snapshot</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>notificationService</name>
+	<packaging>jar</packaging>
 	<description>Notification Service</description>
 
 	<properties>
@@ -90,6 +91,7 @@
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.30</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
