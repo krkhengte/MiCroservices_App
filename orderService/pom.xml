@@ -15,6 +15,7 @@
 	<artifactId>orderService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>orderService</name>
+	<packaging>jar</packaging>
 	<description>Order Service Application</description>
 
 	<properties>
@@ -22,6 +23,14 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>com.paymentService</groupId>
+			<artifactId>paymentService</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -55,14 +64,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
-		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>

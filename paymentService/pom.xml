@@ -15,6 +15,7 @@
 	<artifactId>paymentService</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>paymentService</name>
+	<packaging>jar</packaging>
 	<description>Payment and Notification Service</description>
 
 	<properties>
@@ -29,9 +30,13 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.notificationService</groupId>
-			<artifactId>NOTIFICATION-SERVICE</artifactId>
-			<version>0.0.1</version>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-starter-openfeign</artifactId>
+	</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
 		</dependency>
 
 		<dependency>
@@ -63,9 +68,12 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-web</artifactId>
+			<groupId>com.notificationService</groupId>
+			<artifactId>notificationService</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
 		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
@@ -90,6 +98,7 @@
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
+							<version>1.18.30</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>
