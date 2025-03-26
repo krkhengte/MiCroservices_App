@@ -9,6 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 public class NotificationServiceApplication {
 
 	public static void main(String[] args) {
+		System.out.println("Inside notification");
 		SpringApplication.run(NotificationServiceApplication.class, args);
 	}
 
