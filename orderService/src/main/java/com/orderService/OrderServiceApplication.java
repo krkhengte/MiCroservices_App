@@ -12,7 +12,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 public class OrderServiceApplication {
 
 	public static void main(String[] args) {
-		System.out.println("welcome");
+		System.out.println("Inside order");
 		SpringApplication.run(OrderServiceApplication.class, args);
 	}
 
